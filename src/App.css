@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.Box{
+  height: 500px;
+  width: auto;
+}
+
+.nightLight{
+  background-color: lightgray;
+}
+
+.dayLight{
+  background-color: yellow;
+}
