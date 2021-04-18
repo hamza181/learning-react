@@ -1,13 +1,14 @@
-import "./App.css";
-import React from "react";
-import Child from "./Child";
-import { TransactionProvider } from "./transContext";
+import React from 'react';
+import './App.css';
+import { ContextProvider } from './context';
+import Child from './child'
 
 function App() {
+
   return (
-    <TransactionProvider>
+    <ContextProvider>
       <Child />
-    </TransactionProvider>
+    </ContextProvider>
   );
 }
 
