@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// Class 02
+// Create Context Hooks
+// Context API
+// Reducer
+
+import "./App.css";
+import React, {useState} from "react";
+import Parent from "./Parent";
+import counterContext from "./CounterContext";
+import Child from "./Child";
 
 function App() {
+
+  let countState = useState(0)   // [count, setCount]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    // Accessing data directly from grand child Child.js without parent
+    <counterContext.Provider value={countState}>
+      <div>
+        <Parent name="Hamza" />
+      </div>
+     </counterContext.Provider>
   );
 }
 
