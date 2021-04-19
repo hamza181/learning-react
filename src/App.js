@@ -7,30 +7,29 @@ function App() {
 
   // useEffect is used to fetch API
   // useEffect take two parameters 1. call back function 2. array
-  useEffect(async () => {
-
+  useEffect(() => {
     //  async k lye function ma function banaya aur function ko usi function ma call kya
-    // function getRepos(){
-      
-    // }
+    async function getRepos() {
+      // with async awaits
+      const response = await fetch(
+        "https://api.github.com/users/hamza181/repos"
+      );
+      const data = await response.json();
 
-    // with async awaits
-    const response = await fetch("https://api.github.com/users/hamza181/repos");
-    const data = await response.json();
+      console.log(data);
+      setRepos(data);
+      console.log(repos);
+      // console.log(repos.name)
+    }
 
-    console.log(data);
-    setRepos(data);;
-    console.log(repos);
-
-    // console.log(repos.name)
+    getRepos();
 
     // fetch api without async await
-    // fetch("https://jsonplaceholder.typicode.com/posts/1")
-    //   .then((response) => response.json())
-    //   .then((json) => {
-    //     console.log(json);
-    //     setData(json);
-    //   });
+    fetch("https://jsonplaceholder.typicode.com/posts/1")
+      .then((response) => response.json())
+      .then((json) => {
+        console.log(json);
+      });
     // .then means it will return a promise
   }, []);
 
@@ -39,8 +38,8 @@ function App() {
       <h3>Fetch API</h3>
 
       <ul>
-        {repos.map((repoObj, ind)=>{
-          return(<li key={ind}>{repoObj.name}</li>)
+        {repos.map((repoObj, ind) => {
+          return <li key={ind}>{repoObj.name}</li>;
         })}
       </ul>
     </div>
