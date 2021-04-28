@@ -1,4 +1,5 @@
-// import './App.css';
+// Topic: Covid19 Tracker
+
 import React from 'react';
 import InfoPanel from './Components/InfoPanel';
 import NavBar from './Components/NavBar'
