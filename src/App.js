@@ -2,9 +2,7 @@
 //  https://reactrouter.com/
 //  run => npm install react-router-dom
 
-// import './App.css';
-import react from 'react';
-import { Router } from 'react-router';
+import './App.css';
 import RouteConfig from './Route';
 
 function App() {
