@@ -1,3 +1,6 @@
+// create react typescript app follow this link
+// https://create-react-app.dev/docs/adding-typescript
+
 import logo from './logo.svg';
 import './App.css';
 
