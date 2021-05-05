@@ -7,7 +7,7 @@
 // agar ye sab vs code k terminal par na chale to cmd par chalana ha 
 
 // Create react app with typescript template
-// npm create-react-app app1 --template typescript
+// npx create-react-app app1 --template typescript
 
 // import './App.css';
 
