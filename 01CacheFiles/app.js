@@ -1,3 +1,5 @@
+// ye vs code k live server par kam kare gi
+
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
     .register("service-worker.js") // service worker file location
