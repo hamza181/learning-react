@@ -1,5 +1,9 @@
 // Topic: Covid19 Tracker
 
+// if not work run => npm install
+// and then run => npm start
+
+
 import React from 'react';
 import InfoPanel from './Components/InfoPanel';
 import NavBar from './Components/NavBar'
