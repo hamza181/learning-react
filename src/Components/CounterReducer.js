@@ -9,7 +9,7 @@ export default function CounterReducer(state = initialState, action) {
 				...state,
 				counter: state.counter + 1
 			};
-		case 'DECCREMENT':
+		case 'DECREMENT':
 			return {
 				...state,
 				counter: state.counter - 1
