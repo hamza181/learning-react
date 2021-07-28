@@ -1,9 +1,16 @@
 // This is action
 
+export const increment = 'INCREMENT';
+export const decrement = 'DECREMENT';
+
 export const incNumber = () => {
     return{
-        type: 'INCREAMENT'
+        type: increment
     }
 }
 
-export const decNumber = () => { type: 'DECREAMENT' }
+export const decNumber = () => {
+    return{
+        type: decrement
+    }
+}

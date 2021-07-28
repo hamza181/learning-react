@@ -1,11 +1,14 @@
 // This is a reducer 
 
+// import {} from './'
+import { increment, decrement } from "../actions/index";
+
 const initialState = 0;
 
 const changeNumber = (state = initialState, action) => {
     switch(action.type){
-        case 'INCREAMENT' : return state + 1;
-        case 'DECCREAMENT' : return state - 1;
+        case increment : return state + 1;
+        case decrement : return state - 1;
         default : return state;
     }
 }
