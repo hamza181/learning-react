@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 export default class ClassComponent extends Component {
-  constructor(params) {
-    super(params);
+  constructor(props) {
+    super(props);
     this.state = {
       name: "ClassComponent",
       id: 1,
