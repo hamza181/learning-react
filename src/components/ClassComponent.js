@@ -13,6 +13,24 @@ export default class ClassComponent extends Component {
     this.setState({ name: "Hamza" });
   }
 
+  //   it runs when the component is mounted to the DOM
+  //   it runs when component is created
+  componentDidMount() {
+    console.log("componentDidMount");
+  }
+
+  // it runs when the component is updated
+  // it runs when a state is updated or a prop is updated
+  componentDidUpdate() {
+    console.log("componentDidUpdate");
+  }
+
+  // it runs when the component is unmounted from the DOM
+  // it runs when component is destroyed or removing from the DOM or change the route
+  componentWillUnmount() {
+    console.log("componentWillUnmount");
+  }
+
   render() {
     return (
       <div>
